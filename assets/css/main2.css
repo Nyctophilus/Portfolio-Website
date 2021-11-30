@@ -1,30 +1,9 @@
 /*  Intro section  */
 
 
-:root {
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
-    
 
-    
-    --clr-light: #fff;
-    --clr-dark: #303030;
-    --clr-accent: #DC143C;
-
-    --fw-reg: 300;
-    --fw-bold: 900;
-    
-    --fs-h1: 3rem;
-    --fs-h2: 2.25rem;
-    --fs-h3: 1.25rem;
-    --fs-body: 1rem;
-
-    --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.45),
-          0.125em 0.125em 0.25em rgba(0,0,0,.15);
-}
 
 img {
-    display: block;
     max-width: 100%;
 }
 strong { 
@@ -191,11 +170,6 @@ h2{
 .textWhite{
     color: white;
     background: -webkit-linear-gradient(#FD5B78,#eee);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-.textgradnient{
-    background: -webkit-linear-gradient(#FF8C00, #FD5B78);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -401,3 +375,17 @@ div .flutter{
     font-weight: 900;
     font-size: 20px;
 }
+
+
+
+/*Projects*/
+.user-details h1{
+    text-align: center;
+    background: -webkit-linear-gradient( #FF8C00,#DC143C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    position: relative;
+    font-size: 5rem;
+    font-weight: 900;
+}
+
