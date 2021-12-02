@@ -18,7 +18,8 @@
     />
     <!-- Import CSS: Main Stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/main2.css" />
+    <link rel="stylesheet" href="./assets/css/iconing.css" />
+    <link rel="stylesheet" href="./assets/css/pikachu.css" />
 
 <!--
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -37,6 +38,9 @@
 
 
   </head>
+
+
+
 
     <div id="particles-js">
       <div class="header">
@@ -66,11 +70,19 @@
       <a class="down" href="#home" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
     </div>
 
-  <body>
+  <body id="bod" class="dark-mode">
+
+
+      <div class="theme-switch-wrapper">
+    <label class="theme-switch" for="checkbox" >
+        <input type="checkbox" id="checkbox" onclick="darkModeToggle()"/>
+        <div class="slider round"></div>
+  </label>
+  <!-- <em >Enable Dark Mode!</em> -->
+</div>
 
 
 
-    
       <!-- Introduction -->
            <section class="intro" id="home">
                <h1 class="section__title section__title--intro">
@@ -81,7 +93,7 @@
             </section>
             <div >
               <h2 class="story-head"> My Story</h2>
-            <h1 class="story">I‘m a highly motivated developer.I keen on learning new Tech and tools. You can say it's more like a hobbit to me now. Also reading books is so interesting to me!  Basically, I‘m focused in mobile App development using the awesome framework google's flutter which can generate highly responsive apps on multiple platforms. I had much fun creating outstunning apps with it. Additionally, i have many expertise in web development field as i practised it a lot in my university time. I've created many websites including my Personal Portfolio Website.</h1>
+            <h3 class="story">I‘m a highly motivated developer.I keen on learning new Tech and tools. You can say it's more like a hobbit to me now. Also reading books is so interesting to me!  Basically, I‘m focused in mobile App development using the awesome framework google's flutter which can generate highly responsive apps on multiple platforms. I had much fun creating outstunning apps with it. Additionally, i have many expertise in web development field as i practised it a lot in my university time. I've created many websites including my Personal Portfolio Website.</h3>
             </div>
 
 
@@ -92,17 +104,17 @@
             <div class="services">
                 <div class="service">
                     <h3 class="textWhite">Flutter Development</h3>
-                    <p class="textWhite">I deployed two apps using google's flutter. I'm having good time coding with this stunning framework. Currently, i'm developing the third personal flutter app</p>
+                    <h3 class="textWhite">I deployed two apps using google's flutter. I'm having good time coding with this stunning framework. Currently, i'm developing the third personal flutter app</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
                     <h3 class="textWhite">Web Design&Development</h3>
-                    <p class="textWhite">As for the web development field as i practised it a lot. I've created many websites including my Personal Portfolio Website. I can deliver for you a highly dynamically responsive site with unlimited requests for edits until you are 100% satisfied with the UI you will ever dream of!</p>
+                    <h3 class="textWhite">As for the web development field as i practised it a lot. I've created many websites including my Personal Portfolio Website. I can deliver for you a highly dynamically responsive site with unlimited requests for edits until you are 100% satisfied with the UI you will ever dream of!</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
                     <h3 class="textWhite">WordPress</h3>
-                    <p class="textWhite">I worked out many freelance wordpress websites. I've also developed personal sites using wordpress templates. I can deliver that service quickly and effectively.</p>
+                    <h3 class="textWhite">I worked out many freelance wordpress websites. I've also developed personal sites using wordpress templates. I can deliver that service quickly and effectively.</p>
                 </div> <!-- / service -->
             </div> <!-- / services -->
             
@@ -120,15 +132,60 @@
            <p class="section__subtitle section__subtitle--about">Flutter and Web developer based out of Alexandria</p>
            
            <div class="about-me__body">
-               <p>I am a junior graduated from college of Engineering Computer department at  Pharos University in Alexandria, Recently. 9/2021 to be precise. pursuing Freelancing right now. I am majored in <strong  style="font-size: 18px;font-style: italic;">Computer Engineering</strong>. I find so much interest in developing with <strong class="skills_head" style="font-size: 16px;font-style: italic;" >flutter</strong> at the moment. I wouldn't mind front end development opportunities too. I have quite a knowledge in web. I'm involved as a Software Developer.</p>
-               <p >-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
-               <p class="icon fa fa-mobile-phone"> +20 1000962127</p><br>
-               <p class="icon fa fa-mobile-phone"> +20 1125595287</p><br>
-               <p class="icon fa fa-mail-forward"> mohammed.yuossry@gmail.com</p>
+               <h3>I am a junior graduated from college of Engineering Computer department at  Pharos University in Alexandria, Recently. 9/2021 to be precise. pursuing Freelancing right now. I am majored in <strong  style="font-size: 18px;font-style: italic;">Computer Engineering</strong>. I find so much interest in developing with <strong class="skills_head" style="font-size: 16px;font-style: italic;" >flutter</strong> at the moment. I wouldn't mind front end development opportunities too. I have quite a knowledge in web. I'm involved as a Software Developer.</h3>
+               <h3 >-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h3>
+               <h3 class="icon fa fa-mobile-phone"> +20 1000962127</h3><br>
+               <h3 class="icon fa fa-mobile-phone"> +20 1125595287</h3><br>
+               <h3 class="icon fa fa-mail-forward"> mohammed.yuossry@gmail.com</h3>
            </div>
            
            <img src="./assets/img/jpg/loin3.jpg" alt="Medo looking like a Loin!" class="about-me__img">
         </section>
+
+
+
+
+        <!-- pikachu Section -->
+        <div class="container">
+  <div class="left-ear">
+    <div class="punta"></div>
+  </div>
+  <div class="right-ear">
+    <div class="fillear"></div>
+  </div>
+  <div class="pik-body">
+    <img class="shock-left" src="http://www.megghy.com/gif_animate/natura/tuoni/3.gif">
+    <img class="shock-right" src="http://www.megghy.com/gif_animate/natura/tuoni/3.gif">
+    <div class="pik-head">
+      <div class="eye-left"></div>
+      <div class="eye-right"></div>
+      <div class="cheek-right"></div>
+      <div class="nose"></div>
+      <div class="mouth"></div>
+    </div>
+    
+    <div class="mid">
+      <div class="left-hand"></div>
+      <div class="right-hand"></div>
+      <div class="mark1"></div>
+      <div class="mark2"></div>
+    </div>
+    
+    <div class="left-foot"></div>
+    <div class="right-foot"></div>
+  </div>
+  <div class="tail">
+    <div class="part1"></div>
+    <div class="part2"></div>
+    <div class="part3"></div>
+    <div class="part4"></div>
+    <div class="part5"></div>
+  </div>
+</div>
+
+
+
+
 
 
 
@@ -145,7 +202,7 @@
         <div class="flutter">          
           <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" />
         </div>
-        <div class="flutter"><p>Flutter is my Main focus right now. I have so much fun using and developing with this google's awesome framework. It's super impressive. I'm developing apps for freelance and personal ones as well.</p></div>
+        <div class="flutter"><h3>Flutter is my Main focus right now. I have so much fun using and developing with this google's awesome framework. It's super impressive. I'm developing apps for freelance and personal ones as well.</h3></div>
       </div>
 
 
@@ -157,7 +214,7 @@
           <i class="devicon-javascript-plain colored"></i>
           <i class="devicon-java-plain-wordmark colored"></i>
           <i class="devicon-python-plain colored"></i>
-          <p>My favorite Programming languages for software engineering and developing.</p>
+          <h3>My favorite Programming languages for software engineering and developing.</h3>
         </div>
 
         <!-- Technology Stack #2: Front-End -->
@@ -166,7 +223,7 @@
           <i class="devicon-html5-plain-wordmark colored"></i>
           <i class="devicon-css3-plain-wordmark colored"></i>
           <i class="devicon-react-original colored"></i>
-          <p>My preferred technologies for front-end web development and component design.</p>
+          <h3>My preferred technologies for front-end web development and component design.</h3>
         </div>
 
         <!-- Technology Stack #3: Back-End -->
@@ -176,7 +233,7 @@
           <i><br></i>
           <i class="devicon-mysql-plain-wordmark colored"></i>
  
-          <p>I'm still improving in web developing, Generally! I'm still at learning stage for Node. I Worked at number of projects using pure php </p>
+          <h3>I'm still improving in web developing, Generally! I'm still at learning stage for Node. I Worked at number of projects using pure php </h3>
         </div>
 
         <!-- Technology Stack #4: Tools -->
@@ -185,7 +242,7 @@
           <i class="devicon-git-plain-wordmark colored"></i>
           <i ><br></i>
           <i class="devicon-wordpress-plain colored"></i>
-          <p>My favorite tools for version control, code editing, and container orchestration.</p>
+          <h3>My favorite tools for version control, code editing, and container orchestration.</h3>
         </div>
       </div>
       <div><br></div>
@@ -197,7 +254,7 @@
           <i><img src="./assets/img/jpg/agile icon.png"></i>
           <i><img src="./assets/img/jpg/waterfall-methodology-icons.jpg"></i>
         </div>
-        <div class="flutter"><p>I Work in both Methodologies, but i prefer waterfall model. Basically, i'm Flexible. I can cope with any environment. </p></div>
+        <div class="flutter"><h3>I Work in both Methodologies, but i prefer waterfall model. Basically, i'm Flexible. I can cope with any environment. </h3></div>
       </div>
 
       <div class="singular--">
@@ -207,10 +264,10 @@
           <i><img src="./assets/img/jpg/report icon.jpg"></i>
         </div>
         <div class="flutter">
-          <p>
+          <h3>
             <strong>I can say i'm pretty good at English writen and speaking</strong>
             <br>
-            Also, I have many of those soft Skills like writing reports so professionally. I'm quick learner. I'm considered expert at microsoft word, excel and powerpoint</p></div>
+            Also, I have many of those soft Skills like writing reports so professionally. I'm quick learner. I'm considered expert at microsoft word, excel and powerpoint</h3></div>
       </div>
 
 
@@ -233,7 +290,7 @@
           </picture>
         </div>
         <div class="contents" style="text-align: center">
-          <h3>Personal Portfolio Website</h3>
+          <h4>Personal Portfolio Website</h4>
           <div>
             <img
               height="32"
@@ -258,10 +315,10 @@
             &nbsp;
             <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
           </div>
-          <p style="text-align: justify">
+          <h3 style="text-align: justify">
             I developed and designed a website using React and pure html/css/JS. I hosted it on Github Pages, to showcase my web presence for time being. MY goal of developing it is to improve in web developing and showcasing story, work, experience, education, projects, and achievements in an interactive and
             visually appealing Design.🔥
-          </p>
+          </h3>
           <a class="project-link" target="_blank" href="https://github.com/Nyctophilus/Portfolio-Website">Check it out!</a>
         </div>
       </div>
@@ -275,7 +332,7 @@
           </picture>
         </div>
         <div class="contents-right" style="text-align: center">
-          <h3>METIS</h3>
+          <h4>METIS</h4>
           <img
               height="32"
               width="32"
@@ -285,9 +342,9 @@
           <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/github.svg" />
           &nbsp;
           <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/git.svg" />
-          <p style="text-align: justify">
+          <h3 style="text-align: justify">
             It's a flutter project under developing, yet! It's an app of a nutrition nature. Now, it's providing healthy alternatives of the junk food we eat everyday, which makes healthy life much easier and reliever. Also, it should provide articles from APIs related to Keto and other diets too.🤤
-          </p>
+          </h3>
           <a class="project-link" target="_blank" href=""
             >Check it out!</a
           >
@@ -303,7 +360,7 @@
           </picture>
         </div>
         <div class="contents" style="text-align: center">
-          <h3>ThothScript</h3>
+          <h4>ThothScript</h4>
           <div>
             <img
               height="32"
@@ -315,9 +372,9 @@
           &nbsp;
           <img height="32" width="32" src="https://unpkg.com/simple-icons@3.4.0/icons/git.svg" />
           </div>
-          <p style="text-align: justify">
+          <h3 style="text-align: justify">
             It was my first flutter app. <br>Basically, It's a time-organizing app⏳ which use Eisenhower Matrix concept. Used *Cubit and *gridview.
-          </p>
+          </h3>
           <a class="project-link" target="_blank" href="https://github.com/Nyctophilus/ThothScript">
             Check it out!
           </a>
@@ -337,7 +394,7 @@
           </picture>
         </div>
         <div class="contents-right" style="text-align: center">
-          <h3>GANs Colorizer AI</h3>
+          <h4>GANs Colorizer AI</h4>
           <div>
             <img
               height="32"
@@ -352,9 +409,9 @@
             />
 
           </div>
-          <p style="text-align: justify">
+          <h3 style="text-align: justify">
             It was my graduation project. It's Grey Scale Video & image Colorization using Generative adversarial networks "GANs" ML framework. Fully functional AI model which is coloring Grey Scale videos by deep learning techniques.
-          </p>
+          </h3>
           <a class="project-link" target="_blank" href="">
             Check it out!
           </a>
@@ -371,7 +428,7 @@
           </picture>
         </div>
         <div class="contents" style="text-align: center">
-          <h3>DentalCare Management System</h3>
+          <h4>DentalCare Management System</h4>
           <div>
             <img height="32" width="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/laravel/laravel-plain-wordmark.svg" />
             &nbsp;
@@ -391,9 +448,9 @@
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
           />
           </div>
-          <p style="text-align: justify">
+          <h3 style="text-align: justify">
             Software Project. Not only coding part i did! started -when i was in university- with a survey in three dental clinics. Tried to Acquire the essential needs a dentist would require. Afterwards, Decided to design a full software management system for one of them. Firstly, Designing the layout. Then coding and "unit" testing time. Finally it got DEPLOYED at the clinic!🥳 
-          </p>
+          </h3>
           <a class="project-link" target="_blank" href="https://github.com/Nyctophilus/ThothScript">
             Check it out!
           </a>
@@ -414,7 +471,7 @@
           </picture>
         </div>
         <div class="contents-right" style="text-align: center">
-          <h3>Socialna</h3>
+          <h4>Socialna</h4>
           <div>
             <img height="32" width="42" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"/>
             &nbsp;
@@ -434,10 +491,10 @@
               src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
           />
           </div>
-          <p style="text-align: justify">
+          <h3 style="text-align: justify">
             • A Social Media website. Built to help people connect with friends and family, find communities, and spend fun time.🧑‍🤝‍🧑<br>
             • Functionality: Can add, chat, search, remove people from contact list. Can also post and comment.
-          </p>
+          </h3>
           <a class="project-link" target="_blank" href="">
             Check it out!
           </a>

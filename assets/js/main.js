@@ -5,3 +5,9 @@ function moblieAlert() {
   alert("My mobile numbers: 01000962127 & 01125595287");
 };
 
+
+function darkModeToggle() {
+  var element = document.getElementById("bod");
+  element.classList.toggle('dark-mode');
+}
+
