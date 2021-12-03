@@ -851,7 +851,63 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+/* mail popUp */ 
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
 
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 475px;
+  background-color: #DB7093;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 8px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 110%;
+  left: 50%;
+  margin-left: -80px;
+  opacity: 70%;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -162px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #DB7093 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 2s;
+  animation: fadeIn 2s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 0.70;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:0.70 ;}
+}
 
 
 /*body {
@@ -862,3 +918,49 @@ background-size: cover;
 
 }
 */
+
+
+
+
+/* sounds buttons styling */
+.plugin-content{
+    position: relative;
+}
+
+    .sound-items{
+    display: inline-grid;
+    place-items:  center;
+    position: relative;
+}
+
+    .plugin-content audio{
+        position: absolute; opacity:0;
+        transform: translateX(50%);
+        transform: translateY(150%);
+    }
+
+    .plugin-content button{
+            background-color: transparent;
+            cursor: pointer;
+            border-radius: 50%;
+            border: none;
+            width: 50px;
+            height:50px;
+    }
+    .plugin-content button:hover{
+        background-color: grey;
+        transform: rotate(360deg);
+        transform: scale(1.5);
+    }
+
+   
+.plugin-content input[type=range]{
+    cursor: e-resize;
+    margin: 10px 0;
+    width: 100%;   
+}
+
+
+.v-slider{
+    opacity: 0;
+}

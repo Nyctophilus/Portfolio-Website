@@ -11,3 +11,66 @@ function darkModeToggle() {
   element.classList.toggle('dark-mode');
 }
 
+function mailpop(){
+
+  var popup = document.getElementById("myPopup");
+  popup.classList.toggle("show");
+}
+
+function mclick() {
+
+  navigator.clipboard.writeText("mohammed.yuossry@gmail.com");
+  alert("Mail has been copied to clipboard!👇🤗🤩")
+}
+
+
+function initVolume(val)
+    {
+        var player = document.getElementById('audio1');
+        player.volume=.5;
+        player.volume = val / 1;
+    }
+function setVolume(val)
+    {
+        var player = document.getElementById('audio1');
+        console.log('Before: ' + player.volume);
+        player.volume = val / 1;
+        console.log('After: ' + player.volume);
+    }
+
+function play_rain(){
+  var sliderBar = document.getElementById('volume-slider');
+  sliderBar.classList.toggle("v-slider");
+
+  var play_rain = document.getElementById("audio1");
+  
+
+  if(play_rain.paused){
+  play_rain.play();
+  console.log("listen to the rain!");}
+
+
+  else{
+  play_rain.pause();
+  console.log("rain has Stopped!");}
+
+}
+
+function play_lighting(){
+  var sliderBar = document.getElementById('volume-slider2');
+  sliderBar.classList.toggle("v-slider");
+
+  var play_rain = document.getElementById("audio2");
+  
+
+  if(play_rain.paused){
+  play_rain.play();
+  console.log("listen to the lighting!");}
+
+
+  else{
+  play_rain.pause();
+  console.log("lighting has Stopped!");}
+
+}
+
