@@ -24,21 +24,51 @@ function mclick() {
 }
 
 
-function initVolume(val)
-    {
-        var player = document.getElementById('audio1');
-        player.volume=.5;
-        player.volume = val / 1;
-    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    function showcoffe(){
+  document.getElementById('coffe').classList.toggle("show");
+  console.log("coffeeeeeeeeee");
+}
+
+
+
+
+
+/* rain */ 
 function setVolume(val)
     {
-        var player = document.getElementById('audio1');
-        console.log('Before: ' + player.volume);
-        player.volume = val / 1;
-        console.log('After: ' + player.volume);
+        var player1 = document.getElementById('audio1');
+        console.log('Before: ' + player1.volume);
+        player1.volume = val / 1;
+        console.log('After: ' + player1.volume);
+
+
+        
     }
 
+
 function play_rain(){
+
+var player = document.getElementById('audio1');
+        player.volume = .5 / 1;
+
+
+
   var sliderBar = document.getElementById('volume-slider');
   sliderBar.classList.toggle("v-slider");
 
@@ -56,21 +86,202 @@ function play_rain(){
 
 }
 
+
+/* lighting */
+
+function setVolume2(val){
+var player2 = document.getElementById('audio2');
+        console.log('2Before: ' + player2.volume);
+        player2.volume = val / 1;
+        console.log('2After: ' + player2.volume);
+
+}
+
 function play_lighting(){
+
+var player = document.getElementById('audio2');
+        player.volume = .5 / 1;
+
+
+
   var sliderBar = document.getElementById('volume-slider2');
   sliderBar.classList.toggle("v-slider");
 
-  var play_rain = document.getElementById("audio2");
+  var play_lighting = document.getElementById("audio2");
   
 
-  if(play_rain.paused){
-  play_rain.play();
+  if(play_lighting.paused){
+  play_lighting.play();
   console.log("listen to the lighting!");}
 
 
   else{
-  play_rain.pause();
+  play_lighting.pause();
   console.log("lighting has Stopped!");}
 
 }
 
+
+/* wind */
+
+function setVolume3(val){
+var player2 = document.getElementById('audio3');
+        console.log('3Before: ' + player2.volume);
+        player2.volume = val / 1;
+        console.log('3After: ' + player2.volume);
+
+}
+
+function play_wind(){
+
+var player = document.getElementById('audio3');
+        player.volume = .5 / 1;
+
+
+
+  var sliderBar = document.getElementById('volume-slider3');
+  sliderBar.classList.toggle("v-slider");
+
+  var play = document.getElementById("audio3");
+  
+
+  if(play.paused){
+  play.play();
+  console.log("listen to the wind!");}
+
+
+  else{
+  play.pause();
+  console.log("wind has Stopped!");}
+
+}
+
+
+
+/* river */
+
+function setVolume4(val){
+var player = document.getElementById('audio4');
+        player.volume = val / 1;
+}
+
+function play_river(){
+
+var player = document.getElementById('audio4');
+        player.volume = .5 / 1;
+
+
+
+  var sliderBar = document.getElementById('volume-slider4');
+  sliderBar.classList.toggle("v-slider");
+
+  var play = document.getElementById("audio4");
+  
+
+  if(play.paused){
+  play.play();
+  console.log("listen to the river!");}
+
+
+  else{
+  play.pause();
+  console.log("river has Stopped!");}
+
+}
+
+
+
+/* shore */
+
+function setVolume5(val){
+var player = document.getElementById('audio5');
+        player.volume = val / 1;
+}
+
+function play_shore(){
+
+var player = document.getElementById('audio5');
+        player.volume = .5 / 1;
+
+
+
+  var sliderBar = document.getElementById('volume-slider5');
+  sliderBar.classList.toggle("v-slider");
+
+  var play = document.getElementById("audio5");
+  
+
+  if(play.paused){
+  play.play();
+  console.log("listen to the shore!");}
+
+
+  else{
+  play.pause();
+  console.log("shore has Stopped!");}
+
+}
+
+
+/* shore */
+
+function setVolume6(val){
+var player = document.getElementById('audio6');
+        player.volume = val / 1;
+}
+
+function play_fire(){
+
+var player = document.getElementById('audio6');
+        player.volume = .5 / 1;
+
+
+
+  var sliderBar = document.getElementById('volume-slider6');
+  sliderBar.classList.toggle("v-slider");
+
+  var play = document.getElementById("audio6");
+  
+
+  if(play.paused){
+  play.play();
+  console.log("listen to the fire!");}
+
+
+  else{
+  play.pause();
+  console.log("fire has Stopped!");}
+
+}
+
+
+/* bird */
+
+function setVolume6(val){
+var player = document.getElementById('audio7');
+        player.volume = val / 1;
+}
+
+function play_bird(){
+
+var player = document.getElementById('audio7');
+        player.volume = .5 / 1;
+
+
+
+  var sliderBar = document.getElementById('volume-slider7');
+  sliderBar.classList.toggle("v-slider");
+
+  var play = document.getElementById("audio7");
+  
+
+  if(play.paused){
+  play.play();
+  console.log("listen to the bird!");}
+
+
+  else{
+  play.pause();
+  console.log("bird dead!");}
+
+}

@@ -70,15 +70,138 @@
 
   <body id="bod" class="dark-mode">
 
-
+          <!-- dark mode btn-->
       <div class="theme-switch-wrapper">
     <label class="theme-switch" for="checkbox" >
         <input type="checkbox" id="checkbox" onclick="darkModeToggle()"/>
         <div class="slider round"></div>
   </label>
-  <!-- <em >Enable Dark Mode!</em> -->
 </div>
 
+
+
+
+
+
+
+<button class="coffeBtn" onclick="showcoffe()"><img width="15" height="15" src="https://cdn-icons.flaticon.com/png/512/461/premium/461095.png?token=exp=1638520963~hmac=c4f8abbac8f3988aee26a7bab0860dc3">☕</button>
+
+<!-- calm sounds -->
+
+<div id="coffe" class="plugin-content">
+<ul>
+          <!-- sound 1 -->
+    <li class="sound-items">
+    <button title="rain" type="button" onclick="play_rain(this)">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><g fill="#75d6ff"><path d="M23.6 45.4c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4-4.7 6"/><path d="M37.2 47c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4.1-4.7 6c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.6 3.3-2.2"/><path d="M46.6 39.4c-2.3 2-4 4.1-4.7 6c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.8-1.9.8-4.6.3-7.6"/><path d="M14.4 45.4c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4-4.7 6"/><path d="M16.4 58.1c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4.1-4.7 6"/><path d="M30 59.7c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4.1-4.7 6c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2"/><path d="M39.4 52.1c-2.3 2-4 4.1-4.7 6c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.8-1.9.8-4.5.3-7.6"/><path d="M7.2 58.1c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4.1-4.7 6"/></g><path d="M18.9 33.7c-.8 0-1.7-.1-2.5-.4c-3.3-1.1-5.4-4.1-5.4-7.5c0-2.3 1-4.5 2.7-6c.4-.4.9-.7 1.5-1l.5-1.8C17 12.4 21.3 9.2 26 9.2c.5 0 1 0 1.5.1c.4.1.9.2 1.3.3l.2-.4c1.9-3.5 5.6-5.6 9.5-5.6c6 0 10.9 4.9 10.9 10.9v1.1c.5.2.9.4 1.4.6c2.9 1.7 4.7 4.8 4.7 8.1c0 4.4-3 8.2-7.3 9.1c-.7.2-1.4.2-2.1.2l-27.2.1" fill="#fff"/><path d="M38.5 5.2c5.1 0 9.3 4.2 9.3 9.3v.7c-2.2.2-4.1 1-5.6 2.4c1.1-.7 2.5-1 3.9-1c.5 0 1 .1 1.5.1c.8.2 1.6.5 2.4.9c2.3 1.3 3.9 3.9 3.9 6.8c0 3.7-2.6 6.8-6.1 7.6c-.6.1-1.1.2-1.8.2H18.9c-.7 0-1.4-.1-2-.3c-2.5-.8-4.4-3.2-4.4-6c0-1.9.8-3.6 2.2-4.8c.6-.5 1.3-.9 2.1-1.2c.7-.2 1.4-.4 2.1-.4c2 0 3.9 1 5 2.5h.1c-1.3-2.5-3.9-4.2-6.8-4.5c1.1-3.8 4.6-6.6 8.8-6.6c.4 0 .9 0 1.3.1c.8.1 1.7.4 2.4.7c2.8 1.3 4.9 3.9 5.3 7v-.1c0-3.6-1.8-6.8-4.6-8.6c1.5-2.9 4.6-4.8 8.1-4.8m0-3.2C34.2 2 30.2 4.2 28 7.8h-.3c-.7-.1-1.2-.1-1.8-.1c-5.5 0-10.3 3.7-11.9 8.9l-.4 1.3c-.4.2-.8.5-1.1.8c-2.1 1.8-3.3 4.4-3.3 7.2c0 4.1 2.6 7.7 6.5 9c1 .3 2 .5 3 .5H46c.8 0 1.7-.1 2.5-.3c5-1.1 8.5-5.5 8.5-10.7c0-3.9-2.1-7.5-5.5-9.5c-.2-.1-.3-.2-.5-.3v-.1C51 7.6 45.4 2 38.5 2z" fill="#b6c1d1"/></svg>
+
+    </button>
+    <input id="volume-slider" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" onchange="setVolume(this.value)">
+      <audio controls autoplay loop id="audio1">
+      <source type="audio/mp3" src="https://ana.hsoubcdn.com/dashboard/static/assets/relax-sounds/rain.mp3">
+    </audio>
+    </li>
+
+          <!-- sound 2 -->
+    <li class="sound-items">
+    <button title="lighting" type="button" onclick="play_lighting()">
+    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path fill="#ffce31" d="M24.5 31.9l-4.9 16.2h12.5L27.9 62l16.5-20.2H32.5l2.9-9.9z"/><path d="M18.2 32.5c-.8 0-1.6-.1-2.4-.4c-3.1-1-5.3-3.9-5.3-7.2c0-2.2 1-4.3 2.6-5.7c.4-.4.9-.7 1.4-1l.5-1.8c1.3-4.4 5.4-7.5 10-7.5c.5 0 .9 0 1.5.1c.4.1.8.1 1.2.3l.2-.4c1.9-3.3 5.4-5.4 9.2-5.4C43 3.5 47.7 8.2 47.7 14v1c.4.2.9.4 1.3.6c2.8 1.6 4.5 4.6 4.5 7.8c0 4.2-2.9 7.8-7 8.8c-.7.2-1.4.2-2 .2H18.2z" fill="#fff"/><path d="M37.1 5c5 0 9 4 9 8.9v.7c-2.1.2-4 1-5.4 2.3c1.1-.6 2.4-1 3.7-1c.5 0 1 .1 1.5.1c.8.2 1.6.5 2.3.9c2.3 1.3 3.8 3.7 3.8 6.5c0 3.6-2.5 6.5-5.8 7.3c-.7.2-1.2.3-1.8.3H18.2c-.7 0-1.3-.1-1.9-.3c-2.4-.8-4.2-3.1-4.2-5.8c0-1.8.8-3.5 2.1-4.6c.6-.5 1.3-.9 2-1.2c.6-.2 1.3-.3 2-.3c2 0 3.7.9 4.9 2.4h.1c-1.3-2.4-3.7-4.1-6.6-4.3c1.1-3.7 4.5-6.4 8.5-6.4c.4 0 .9 0 1.3.1c.8.1 1.6.3 2.3.7c2.7 1.2 4.7 3.7 5.1 6.8V18c0-3.4-1.8-6.5-4.5-8.3C30.8 6.9 33.8 5 37.1 5m0-3C33 2 29.2 4.1 27 7.6h-.3c-.6-.1-1.2-.1-1.7-.1c-5.3 0-10 3.5-11.4 8.6l-.3 1.2c-.4.2-.7.5-1.1.8c-2 1.7-3.1 4.2-3.1 6.9c0 4 2.5 7.4 6.3 8.7c.9.3 1.9.5 2.9.5h26.2c.8 0 1.6-.1 2.4-.3c4.8-1.1 8.2-5.3 8.2-10.3c0-3.8-2-7.3-5.3-9.1c-.2-.1-.3-.2-.5-.3v-.1C49.2 7.4 43.8 2 37.1 2z" fill="#b6c1d1"/></svg>
+
+    </button>
+    <input id="volume-slider2" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" onchange="setVolume2(this.value)">
+      <audio controls autoplay loop id="audio2">
+      <source type="audio/mp3" src="https://ana.hsoubcdn.com/dashboard/static/assets/relax-sounds/lightning.mp3">
+    </audio>
+    </li>
+
+
+
+
+              <!-- sound 3 -->
+    <li class="sound-items">
+    <button title="wind" type="button" onclick="play_wind()">
+    <svg xmlns="http://www.w3.org/2000/svg"width="40" height="36" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 128 128"><path d="M3.95 11.39s.18 44.33.18 59.53s-.54 49.03.72 49.4c1.27.36 11.04-10.31 13.03-12.3c1.99-1.99 4.34-4.7 5.79-4.89c1.45-.18 13.93 1.09 19.18.9s13.21 0 17.19-3.44c3.98-3.44 3.44-12.3 4.34-13.39c.9-1.09 3.24-5.03 3.79-6.4c.55-1.37-.09-3.2-.64-3.48c-.55-.27-1.19-2.29-1.19-2.29l3.3-5.31s0-2.2-1.01-2.56c-1.01-.37-4.67-.55-4.76-.92c-.09-.37 2.01-2.11 3.3-3.57c1.28-1.46 1.83-4.49 1.1-5.22c-.73-.73-8.24-4.85-9.7-7.41c-1.46-2.56-3.3-6.41-3.94-7.96c-.64-1.56-2.11-6.13-3.2-7.78c-1.1-1.65 1.37-2.65 1.37-2.65s6.77-5.58 6.13-12.91s-6.14-12.17-15.48-10.8S31 14.81 31 14.81s-5.86-4.3-13.36-5.03s-13.38.76-13.69 1.61z" fill="#afe3fe"/><radialGradient id="ssvg-id-wind-facea" cx="40.787" cy="59.099" r="80.658" gradientUnits="userSpaceOnUse"><stop offset=".633" stop-color="#afe3fe"/><stop offset=".69" stop-color="#b9e7fe"/><stop offset=".855" stop-color="#d2f0fe"/><stop offset=".955" stop-color="#dbf3fe"/></radialGradient><path d="M76.96 69.55l-5.02 5.31s.8.84 1.47 1.24c.85.5 1.78.77 1.78.77l4.6-3.13l11.54.48s-8.08 3.95-8.7 12.27c-.64 8.6 4.67 17.21 16.11 17.21s17.11-7.96 17.39-15.01c.27-6.87-3.48-11.81-3.48-11.81s12.23-3.6 13.09-14.74c.92-11.9-7.02-21.85-19.22-22.98c-12.91-1.19-17.96 9.82-18.4 13.82c-.73 6.68 3.2 12.45 3.2 12.45l-14.36 4.12z" fill="url(#ssvg-id-wind-facea)"/><path d="M70.91 69.36c.54 3.74-3.07 6.14-3.07 6.14s1.42.37 1.74 1.81c.28 1.26-.54 2.48-1.33 3.31c0 0-.75-.99-2.04-2.05c-.69-.57-1.56 0-2.23-1.06s1.06-3.18 1.06-3.18s1.56-2.79 2.01-3.74c.45-.95 1.35-3.49 1.35-3.49s2.12-.37 2.51 2.26z" fill="#4fc1f5"/><path d="M57.17 65.03c-.59.87.49 7.44 0 14.02c-.61 8.21-4.8 13.85-4.13 14.74c.93 1.24 7.54-.56 8.99-15.19c1.04-10.48-3.8-15.14-4.86-13.57z" fill="#4fc1f5"/><path d="M49.66 52.7c-2.04.37-.26 3.87-1.85 4.42c-1 .35-2.23.07-4.07-.88c-3.18-1.64-6.27-5.3-7.61-3.34c-1.35 1.96 5.26 14.26 14.03 11.69c2.18-.64 3.18-2.71 3.34-4.58c.27-3.41-1.73-7.7-3.84-7.31z" fill="#159df5"/><path d="M74.87 76.71c.52.62 1.85.29 3.4-.68c3.34-2.1 10.76-3.05 16.29.42c5.52 3.47 7.11 9.57 3.68 12.75c-2.9 2.69-7.92 1.69-8.36-1.13c-.35-2.27 2.69-3.12 3.33-.78c.28 1.02 2.05 1.91 2.76 0s-1.75-7.09-7.15-5.03c-4.98 1.91-3.51 11.19 3.77 12.68c6.59 1.35 14.57-5.03 11.17-14.73c-2.49-7.1-11.54-11.33-21.25-9.42c-4.74.93-9.03 4.26-7.64 5.92z" fill="#4fc1f5"/><path d="M72.32 75.32c1.06.74 1.43-1.48 3.87-3.48c2.13-1.74 7.18-4.52 14.33-3.46c7.15 1.06 16.22 4.04 22.8-1.42s5.24-17.92-4.53-21.39s-15.58 2.27-15.23 8.78c.4 7.31 9.33 7.03 11.24 3.63c1.63-2.9.17-5.33-1.11-5.97c-1.27-.64-2.99-.08-2.41 1.84c.71 2.34-1.91 2.97-3.12 1.56c-1.2-1.42-.52-5.75 2.62-6.66c4.89-1.42 13.47 1.95 11.9 10.84c-1.63 9.21-16.71 5.88-22.87 5.1s-13.17 2.05-15.79 4.6c-2.62 2.56-3.06 5.09-1.7 6.03z" fill="#4fc1f5"/><path d="M4.02 92.05c-.4.5-.64 4.52-.06 4.6c1.31.19 11.69-6.81 16.83-21.03s3.23-28.54 3.23-28.54s3.33-4.13 5.04-7.16c1.71-3.02 2.82-7.76 2.82-7.76s2.72 3.63 9.98 3.93c7.26.3 18.46-2.82 20.07-12.7C63.42 14.22 55 9.7 53.28 9.33c0 0 1.7 1 2.84 2.35c.79.94 1.66 2.26 2.12 3.87c1.11 3.87.4 7.49-.44 9.38c-1.18 2.63-3.23 5.27-6.97 6.6c-8.17 2.92-18.14.13-18.04-4.91c.1-5.04 6.14-8.43 10.31-8.32c3.07.08 4.68 2.69 1.96 4.2c-2.72 1.51-4.85.56-6.06 1.67c-1.07.99-.46 3.06 3.97 2.35s8.17-4.03 7.06-7.46s-7.46-6.52-15.37-1.19c-6.69 4.51-4.96 10.73-5 11.27c-.02.3-1.92 6.35-4.34 10.49s-5.55 7.86-5.55 7.86s1.34 14.02-1.92 23.59C13.03 85.3 4.02 92.05 4.02 92.05z" fill="#fff"/></svg>
+
+    </button>
+    <input id="volume-slider3" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" onchange="setVolume3(this.value)">
+      <audio controls autoplay loop id="audio3">
+      <source type="audio/mp3" src="https://ana.hsoubcdn.com/dashboard/static/assets/relax-sounds/wind.mp3">
+    </audio>
+    </li>
+
+
+
+
+                  <!-- sound 4 -->
+    <li class="sound-items">
+    <button title="river" type="button"  onclick="play_river()">
+    <img src="https://cdn-icons.flaticon.com/png/512/2024/premium/2024172.png?token=exp=1638519811~hmac=b47c04231604a2d0d27003be3402f2dc" width="40" height="36" /></img>
+
+    </button>
+    <input id="volume-slider4" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" onchange="setVolume4(this.value)">
+      <audio controls autoplay loop id="audio4">
+      <source type="audio/mp3" src="https://ana.hsoubcdn.com/dashboard/static/assets/relax-sounds/river.mp3">
+    </audio>
+    </li>
+
+
+    <br>
+
+
+                      <!-- sound 5 -->
+    <li class="sound-items">
+    <button title="shore" type="button"  onclick="play_shore()">
+    <img src="https://cdn-icons.flaticon.com/png/512/905/premium/905604.png?token=exp=1638520220~hmac=4907929ddad3f8f9bd6faa74025ae846" width="40" height="36" /></img>
+
+    </button>
+    <input id="volume-slider5" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" onchange="setVolume5(this.value)">
+      <audio controls autoplay loop id="audio5">
+      <source type="audio/mp3" src="https://ana.hsoubcdn.com/dashboard/static/assets/relax-sounds/shore.mp3">
+    </audio>
+    </li>
+
+
+
+                          <!-- sound 6 -->
+    <li class="sound-items">
+    <button title="fire" type="button" onclick="play_fire()">
+    <img src="https://cdn-icons-png.flaticon.com/512/426/426833.png" width="40" height="36" /></img>
+
+    </button>
+    <input id="volume-slider6" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" onchange="setVolume6(this.value)">
+      <audio controls autoplay loop id="audio6">
+      <source type="audio/mp3" src="https://ana.hsoubcdn.com/dashboard/static/assets/relax-sounds/fire.mp3">
+    </audio>
+    </li>
+
+
+
+
+
+                              <!-- sound 7 -->
+    <li class="sound-items">
+    <button title="bird" type="button" onclick="play_bird()">
+    <img src="https://cdn-icons-png.flaticon.com/512/2977/2977285.png" width="40" height="36" /></img>
+
+    </button>
+    <input id="volume-slider7" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" onchange="setVolume6(this.value)">
+      <audio controls autoplay loop id="audio7">
+      <source type="audio/mp3" src="https://ana.hsoubcdn.com/dashboard/static/assets/relax-sounds/bird.mp3">
+    </audio>
+    </li>
+
+
+
+
+
+
+
+</ul>
+</div>
+
+
+
+  
 
 
       <!-- Introduction -->
@@ -144,38 +267,6 @@
 
 
 
-<!-- calm sounds -->
-
-<div class="plugin-content">
-<ul>
-          <!-- sound 1 -->
-    <li class="sound-items">
-    <button title="rain" type="button" id="btn1" onclick="play_rain(this)">
-    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><g fill="#75d6ff"><path d="M23.6 45.4c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4-4.7 6"/><path d="M37.2 47c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4.1-4.7 6c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.6 3.3-2.2"/><path d="M46.6 39.4c-2.3 2-4 4.1-4.7 6c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.8-1.9.8-4.6.3-7.6"/><path d="M14.4 45.4c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4-4.7 6"/><path d="M16.4 58.1c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4.1-4.7 6"/><path d="M30 59.7c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4.1-4.7 6c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2"/><path d="M39.4 52.1c-2.3 2-4 4.1-4.7 6c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.8-1.9.8-4.5.3-7.6"/><path d="M7.2 58.1c-.6 1.6-.1 3.3 1.1 3.8c1.2.4 2.7-.5 3.3-2.2c.7-1.9.7-4.6.3-7.6c-2.3 2-4 4.1-4.7 6"/></g><path d="M18.9 33.7c-.8 0-1.7-.1-2.5-.4c-3.3-1.1-5.4-4.1-5.4-7.5c0-2.3 1-4.5 2.7-6c.4-.4.9-.7 1.5-1l.5-1.8C17 12.4 21.3 9.2 26 9.2c.5 0 1 0 1.5.1c.4.1.9.2 1.3.3l.2-.4c1.9-3.5 5.6-5.6 9.5-5.6c6 0 10.9 4.9 10.9 10.9v1.1c.5.2.9.4 1.4.6c2.9 1.7 4.7 4.8 4.7 8.1c0 4.4-3 8.2-7.3 9.1c-.7.2-1.4.2-2.1.2l-27.2.1" fill="#fff"/><path d="M38.5 5.2c5.1 0 9.3 4.2 9.3 9.3v.7c-2.2.2-4.1 1-5.6 2.4c1.1-.7 2.5-1 3.9-1c.5 0 1 .1 1.5.1c.8.2 1.6.5 2.4.9c2.3 1.3 3.9 3.9 3.9 6.8c0 3.7-2.6 6.8-6.1 7.6c-.6.1-1.1.2-1.8.2H18.9c-.7 0-1.4-.1-2-.3c-2.5-.8-4.4-3.2-4.4-6c0-1.9.8-3.6 2.2-4.8c.6-.5 1.3-.9 2.1-1.2c.7-.2 1.4-.4 2.1-.4c2 0 3.9 1 5 2.5h.1c-1.3-2.5-3.9-4.2-6.8-4.5c1.1-3.8 4.6-6.6 8.8-6.6c.4 0 .9 0 1.3.1c.8.1 1.7.4 2.4.7c2.8 1.3 4.9 3.9 5.3 7v-.1c0-3.6-1.8-6.8-4.6-8.6c1.5-2.9 4.6-4.8 8.1-4.8m0-3.2C34.2 2 30.2 4.2 28 7.8h-.3c-.7-.1-1.2-.1-1.8-.1c-5.5 0-10.3 3.7-11.9 8.9l-.4 1.3c-.4.2-.8.5-1.1.8c-2.1 1.8-3.3 4.4-3.3 7.2c0 4.1 2.6 7.7 6.5 9c1 .3 2 .5 3 .5H46c.8 0 1.7-.1 2.5-.3c5-1.1 8.5-5.5 8.5-10.7c0-3.9-2.1-7.5-5.5-9.5c-.2-.1-.3-.2-.5-.3v-.1C51 7.6 45.4 2 38.5 2z" fill="#b6c1d1"/></svg>
-
-    </button>
-    <input id="volume-slider" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" oninput="initVolume(this.value)" onchange="setVolume(this.value)">
-      <audio controls autoplay loop id="audio1">
-      <source type="audio/mp3" src="https://ana.hsoubcdn.com/dashboard/static/assets/relax-sounds/rain.mp3">
-    </audio>
-    </li>
-
-
-          <!-- sound 2 -->
-    <li class="sound-items">
-    <button title="lighting" type="button" id="btn2" onclick="play_lighting()">
-    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="36" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" role="img" width="1em" height="1em" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path fill="#ffce31" d="M24.5 31.9l-4.9 16.2h12.5L27.9 62l16.5-20.2H32.5l2.9-9.9z"/><path d="M18.2 32.5c-.8 0-1.6-.1-2.4-.4c-3.1-1-5.3-3.9-5.3-7.2c0-2.2 1-4.3 2.6-5.7c.4-.4.9-.7 1.4-1l.5-1.8c1.3-4.4 5.4-7.5 10-7.5c.5 0 .9 0 1.5.1c.4.1.8.1 1.2.3l.2-.4c1.9-3.3 5.4-5.4 9.2-5.4C43 3.5 47.7 8.2 47.7 14v1c.4.2.9.4 1.3.6c2.8 1.6 4.5 4.6 4.5 7.8c0 4.2-2.9 7.8-7 8.8c-.7.2-1.4.2-2 .2H18.2z" fill="#fff"/><path d="M37.1 5c5 0 9 4 9 8.9v.7c-2.1.2-4 1-5.4 2.3c1.1-.6 2.4-1 3.7-1c.5 0 1 .1 1.5.1c.8.2 1.6.5 2.3.9c2.3 1.3 3.8 3.7 3.8 6.5c0 3.6-2.5 6.5-5.8 7.3c-.7.2-1.2.3-1.8.3H18.2c-.7 0-1.3-.1-1.9-.3c-2.4-.8-4.2-3.1-4.2-5.8c0-1.8.8-3.5 2.1-4.6c.6-.5 1.3-.9 2-1.2c.6-.2 1.3-.3 2-.3c2 0 3.7.9 4.9 2.4h.1c-1.3-2.4-3.7-4.1-6.6-4.3c1.1-3.7 4.5-6.4 8.5-6.4c.4 0 .9 0 1.3.1c.8.1 1.6.3 2.3.7c2.7 1.2 4.7 3.7 5.1 6.8V18c0-3.4-1.8-6.5-4.5-8.3C30.8 6.9 33.8 5 37.1 5m0-3C33 2 29.2 4.1 27 7.6h-.3c-.6-.1-1.2-.1-1.7-.1c-5.3 0-10 3.5-11.4 8.6l-.3 1.2c-.4.2-.7.5-1.1.8c-2 1.7-3.1 4.2-3.1 6.9c0 4 2.5 7.4 6.3 8.7c.9.3 1.9.5 2.9.5h26.2c.8 0 1.6-.1 2.4-.3c4.8-1.1 8.2-5.3 8.2-10.3c0-3.8-2-7.3-5.3-9.1c-.2-.1-.3-.2-.5-.3v-.1C49.2 7.4 43.8 2 37.1 2z" fill="#b6c1d1"/></svg>
-
-    </button>
-    <input id="volume-slider2" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" oninput="initVolume(this.value)" onchange="setVolume(this.value)">
-      <audio controls autoplay loop id="audio2">
-      <source type="audio/mp3" src="https://ana.hsoubcdn.com/dashboard/static/assets/relax-sounds/lightning.mp3">
-    </audio>
-    </li>
-
-
-</ul>
-</div>
 
 
 
@@ -489,6 +580,8 @@
         </div>
       </div>
     </section>
+
+
 
 
 
