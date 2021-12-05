@@ -18,16 +18,22 @@
 
     --bs: 0.25em 0.25em 0.75em rgba(0,0,0,.45),
           0.125em 0.125em 0.25em rgba(0,0,0,.15);
+
+
+    
+
+    touch-action: pan-x pan-y;
+    height: 100%
 }
 
 html {
     line-height: 1.15;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
     scroll-behavior: smooth;
 }
 
-
+body{
+    touch-action: manipulation;
+}
 
 footer,
 header,
@@ -276,7 +282,7 @@ a img {
 
 .user-details {
     text-align: center;
-    margin: 5px auto
+    margin: 10em auto
 }
 
 #projects {
@@ -727,6 +733,8 @@ h6{
     font-weight: var(--fw-bold);
 }
 
+
+
 .singular--{
     width: 50%;
     transform: translate(50%, 0%);
@@ -766,6 +774,7 @@ h6{
 .singular-- h2{
     text-align: center;
     margin-bottom: .5em;
+    font-size: 2.5em;
 }
 
 @media only screen and (min-width:600px) {
@@ -1191,5 +1200,27 @@ background-size: cover;
 @media only screen and (max-width: 700px){
     .modal-content {
         width: 100%;
+    }
+}
+
+
+
+        /* text alignment for smaller screens */
+@media only screen and (max-width: 550px) {
+    .singular-- h2{
+        font-size: 20px;
+    }
+     h3 {
+        font-size: 15px;
+    }
+
+    .user-details h1 {
+        font-size: 25px;
+    }
+    .user-details h2 {
+        font-size: 18px;
+    }
+    .tech h2{
+        font-size: 20px;
     }
 }
