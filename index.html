@@ -19,6 +19,8 @@
     <!-- Import CSS: Main Stylesheet -->
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/iconing.css" />
+    <link rel="stylesheet" href="./assets/css/folding-bg.css" />
+    <link rel="stylesheet" href="./assets/css/coffeeMac.css" />
 
 <!--
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
@@ -28,7 +30,7 @@
     <!-- Webpage Logo -->
     <link rel="shortcut icon" href="./assets/img/logo.jpg" />
     <!-- Webpage Title -->
-    <title>Medo Portfolio</title>
+    <title>Fayad Portfolio</title>
 
 
                     <!-- Update these with your own fonts -->
@@ -66,6 +68,7 @@
         </div>
       </div>
       <a class="down" href="#home" data-scroll><i class="icon fa fa-chevron-down" aria-hidden="true"></i></a>
+      <canvas class="particles-js-canvas-el" height="1700" style="width: 100%; height: 100%;"></canvas>
     </div>
 
   <body id="bod" class="dark-mode">
@@ -84,7 +87,7 @@
 
 
 
-<button class="coffeBtn" onclick="showcoffe()"><img width="15" height="15" src="https://cdn-icons.flaticon.com/png/512/461/premium/461095.png?token=exp=1638520963~hmac=c4f8abbac8f3988aee26a7bab0860dc3">☕</button>
+<button class="coffeBtn" onclick="showcoffe()"><img width="15" height="15" src="https://cdn-icons.flaticon.com/png/512/1887/premium/1887875.png?token=exp=1638523171~hmac=89e52aa6cda88ac7d7c074a06d83f592">☕</button>
 
 <!-- calm sounds -->
 
@@ -135,7 +138,7 @@
                   <!-- sound 4 -->
     <li class="sound-items">
     <button title="river" type="button"  onclick="play_river()">
-    <img src="https://cdn-icons.flaticon.com/png/512/2024/premium/2024172.png?token=exp=1638519811~hmac=b47c04231604a2d0d27003be3402f2dc" width="40" height="36" /></img>
+    <img src="https://cdn-icons.flaticon.com/png/512/2465/premium/2465925.png?token=exp=1638523350~hmac=3ce702ffeb88025f57e1ca2833f0d559" width="40" height="36" /></img>
 
     </button>
     <input id="volume-slider4" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" onchange="setVolume4(this.value)">
@@ -151,7 +154,7 @@
                       <!-- sound 5 -->
     <li class="sound-items">
     <button title="shore" type="button"  onclick="play_shore()">
-    <img src="https://cdn-icons.flaticon.com/png/512/905/premium/905604.png?token=exp=1638520220~hmac=4907929ddad3f8f9bd6faa74025ae846" width="40" height="36" /></img>
+    <img src="https://cdn-icons.flaticon.com/png/512/905/premium/905604.png?token=exp=1638523032~hmac=51e25cf108b20811a5d151db0c40028f" width="40" height="36" /></img>
 
     </button>
     <input id="volume-slider5" class="v-slider" type="range" min="0" max="1" step=".1" value=".5" onchange="setVolume5(this.value)">
@@ -201,6 +204,21 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   
 
 
@@ -219,22 +237,39 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
             <!-- My services -->
             <section class="my-services" id="services">
                 <h2 class="section__title section__title--services">What I do</h2>
             <div class="services">
                 <div class="service">
-                    <h3 class="textWhite">Flutter Development</h3>
+                    <h3 class="textWhite" style="font-weight: 900;font-size: 20px;">Flutter Development</h3>
                     <h3 class="textWhite">I deployed two apps using google's flutter. I'm having good time coding with this stunning framework. Currently, i'm developing the third personal flutter app</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
-                    <h3 class="textWhite">Web Design&Development</h3>
-                    <h3 class="textWhite">As for the web development field as i practised it a lot. I've created many websites including my Personal Portfolio Website. I can deliver for you a highly dynamically responsive site with unlimited requests for edits until you are 100% satisfied with the UI you will ever dream of!</p>
+                    <h3 class="textWhite" style="font-weight: 900;font-size: 20px;">Web Design&Development</h3>
+                    <h3 class="textWhite" >As for the web development field as i practised it a lot. I've created many websites including my Personal Portfolio Website. I can deliver for you a highly dynamically responsive site with unlimited requests for edits until you are 100% satisfied with the UI you will ever dream of!</p>
                 </div> <!-- / service -->
                 
                 <div class="service">
-                    <h3 class="textWhite">WordPress</h3>
+                    <h3 class="textWhite" style="font-weight: 900; font-size: 20px;">WordPress</h3>
                     <h3 class="textWhite">I worked out many freelance wordpress websites. I've also developed personal sites using wordpress templates. I can deliver that service quickly and effectively.</p>
                 </div> <!-- / service -->
             </div> <!-- / services -->
@@ -245,7 +280,30 @@
 
 
 
+        <!-- Coffee machine -->
 
+
+<button class="coffeBtn mac" onclick="getMeAcoffee()">☕</button>
+
+<div class="container drinkshow" id="coffeeMac">
+    <div class="coffee-header">
+      <div class="coffee-header__buttons coffee-header__button-one"></div>
+      <div class="coffee-header__buttons coffee-header__button-two"></div>
+      <div class="coffee-header__display"></div>
+      <div class="coffee-header__details"></div>
+    </div>
+    <div class="coffee-medium">
+      <div class="coffe-medium__exit"></div>
+      <div class="coffee-medium__arm"></div>
+      <div class="coffee-medium__liquid"></div>
+      <div class="coffee-medium__smoke coffee-medium__smoke-one"></div>
+      <div class="coffee-medium__smoke coffee-medium__smoke-two"></div>
+      <div class="coffee-medium__smoke coffee-medium__smoke-three"></div>
+      <div class="coffee-medium__smoke coffee-medium__smoke-for"></div>
+      <div class="coffee-medium__cup"></div>
+    </div>
+    <div class="coffee-footer"></div>
+  </div>
 
                 <!-- About me -->
         <section class="about-me" id="about">
@@ -260,12 +318,8 @@
                <h3 class="icon fa fa-mail-forward"> mohammed.yuossry@gmail.com</h3>
            </div>
            
-           <img src="./assets/img/jpg/loin3.jpg" alt="Medo looking like a Loin!" class="about-me__img">
+           <img src="./assets/img/jpg/1-removebg.png" alt="Medo looking like a Loin!" class="about-me__img">
         </section>
-
-
-
-
 
 
 
@@ -344,7 +398,7 @@
         </div>
         <div class="flutter">
           <h3>
-            <strong>I can say i'm pretty good at English writen and speaking</strong>
+            <strong>I can say i'm pretty good at English writen and speaking!</strong>
             <br>
             Also, I have many of those soft Skills like writing reports so professionally. I'm quick learner. I'm considered expert at microsoft word, excel and powerpoint</h3></div>
       </div>
@@ -352,6 +406,17 @@
 
       </div>
     </section>
+
+
+        <!-- folding bg-->
+      <div class="card">
+        <div class="fold"></div>
+        <div class="fold"></div>
+        <div class="fold"></div>
+        <div class="fold"></div>
+        <div class="fold"></div>
+      </div>
+
 
     <!-- Projects Section -->
     <section id="projects">
@@ -363,10 +428,28 @@
       <!-- User Project #1: Personal Resumé Website -->
       <div class="user-projects">
         <div class="images-right">
-          <picture>
-            <source type="image/jpg" srcset="./assets/img/jpg/Personal-Resume-Website.jpg" alt="Personal Portfolio Website" />
-            <img alt="Personal Portfolio Website" src="./assets/img/jpg/Personal-Resume-Website.jpg" />
-          </picture>
+          
+
+
+                                                        <!-- img popup-->
+                                  <!-- Trigger the Modal -->
+                            <img id="myImg" src="./assets/img/jpg/Personal-Resume-Website.jpg" alt="My Personal Portfolio Website">
+
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+
+                              <!-- The Close Button -->
+                              <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+                              <!-- Modal Content (The Image) -->
+                              <img class="modal-content" id="img01">
+
+                              <!-- Modal Caption (Image Text) -->
+                              <div id="caption"></div>
+                            </div>
+
+
+
         </div>
         <div class="contents" style="text-align: center">
           <h4>Personal Portfolio Website</h4>
@@ -584,6 +667,19 @@
 
 
 
+      <!-- floating hearts -->
+    <div id="hearts-alpaca" class="hearts hearts-ff">
+     <div class="heart"></div>
+     <div class="heart"></div>
+     <div class="heart"></div>
+     <div class="heart"></div>
+    </div>
+
+
+
+
+
+
 
     <!-- Import JS: Particles Theme -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
@@ -604,11 +700,10 @@
                         <li class="social-list__item"><a class="social-list__link" href="https://github.com/Nyctophilus"><i class="icon fa fa-github-alt" aria-hidden="true"></i></a></li>
                         <li class="social-list__item"><a class="social-list__link" href="https://www.linkedin.com/in/muhammed-fayad-44b677226/"><i class="icon fa fa-linkedin" aria-hidden="true"></i>
                         <li class="social-list__item"><a class="social-list__link" href="https://www.mohammed.yuossry@gmail.com"><i class="icon fa fa-mail-forward"></i></a></li>
-                        <li class="social-list__item"><a class="social-list__link" href=""><i class="icon fa fa-gift"></i></a></li>
-                        <li class="social-list__item"><a class="social-list__link" href=""><i class="icon fa fa-heart-o" onclick=""></i></a></li>
-                        <li class="social-list__item"><a class="social-list__link" href=""><i class="icon fa fa-mobile-phone" onclick="moblieAlert()"></i></a></li>
+                        <li class="social-list__item" onclick="floatHRT()" ><a class="social-list__link"><i class="icon fa fa-heart-o"></i></a></li>
+                        <li class="social-list__item" onclick="moblieAlert()"><a class="social-list__link"><i class="icon fa fa-mobile-phone" ></i></a></li>
                     </ul>
 
-      <h6 class="footer__link">Medo,&copy;  2021</h6>
+      <h6 class="footer__link">Medo&copy;  2021</h6>
     </footer>
 </html>

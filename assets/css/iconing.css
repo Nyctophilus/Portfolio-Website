@@ -53,6 +53,9 @@
     content: "\f092"
 }
 
+.fa-chevron-down:before {
+    content: "\f078"
+}
 
 .fa-twitter:before {
     content: "\f099"
