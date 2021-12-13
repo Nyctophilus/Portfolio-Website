@@ -22,9 +22,9 @@
 
     
 
-    touch-action: pan-x pan-y;
-    height: 100%
+
 }
+
 
 html {
     line-height: 1.15;
@@ -33,7 +33,9 @@ html {
 
 body{
     touch-action: manipulation;
+    margin: 0;
 }
+
 
 footer,
 header,
@@ -153,7 +155,7 @@ a img {
 .header-links .link {
     color: #fff;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     margin: 10px
 }
 
@@ -163,7 +165,7 @@ a img {
 
 @media only screen and (min-width:600px) {
     .header-links .link {
-        font-size: 20px
+        font-size: 16px
     }
 }
 
@@ -245,11 +247,7 @@ a img {
     margin-top: 10em;
 }
 
-@media only screen and (min-width:600px) {
-    #my_skills {
-        width: 80%
-    }
-}
+
 
 
 .tech {
@@ -273,7 +271,6 @@ a img {
 
 @media only screen and (min-width:600px) {
     .user {
-        flex-wrap: nowrap;
         font-size: 75px
     }
 }
@@ -294,11 +291,7 @@ a img {
     margin: 0 auto;
 }
 
-@media only screen and (min-width:600px) {
-    #projects {
-        width: 80%
-    }
-}
+
 
 .user-projects {
     margin: 20px auto;
@@ -461,7 +454,7 @@ a img {
 
 .intro {
     position: relative;
-    padding: 5em;
+    padding: 5em 0 5em 5em;
 }
 
 .intro__img {
@@ -533,7 +526,7 @@ a img {
         text-align: right;
         position: relative;
         left: -1.5em;
-        width: calc(100% + 1.5em);
+        
     }
 
 }
@@ -541,17 +534,12 @@ a img {
 .story-head{
     font-size: 60px;    
     text-align: center;
-
-    /*background-image: url("../img/jpg/HeadStory.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 11%;*/
 }
 
 .story{
     text-align: center;
     word-wrap: break-word;
-    font-size: 20px;
+    font-size: 25px;
     background-image: url("../img/jpg/textb.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -615,7 +603,7 @@ a img {
 @media only screen and (min-width: 600px) {
     .services {
         display: flex;
-        max-width: 1000px;
+        
         margin-left: auto;
         margin-right: auto;
     }
@@ -640,7 +628,6 @@ a img {
 
 .about-me{
     margin: 0 auto;
-
     position: relative;
 }
 
@@ -1224,3 +1211,66 @@ background-size: cover;
         font-size: 20px;
     }
 }
+
+
+.F-parent{
+    display: flex;
+    justify-content: center;
+    -webkit-text-fill-color: var(--off-white);
+}
+.F-child{
+    position: relative;
+}
+
+
+
+
+/*circlar progress indicator*/ 
+@keyframes progress {
+  0% { --percentage: 0; }
+  100% { --percentage: var(--value); }
+}
+
+@property --percentage {
+  syntax: '<number>';
+  inherits: true;
+  initial-value: 0;
+}
+
+[role="progressbar"] {
+  --percentage: var(--value);
+  --primary: #369;
+  --secondary: #adf;
+  --size: 300px;
+  animation: progress 2s 0.5s forwards;
+  width: var(--size);
+  aspect-ratio: 1;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+
+[role="progressbar"]::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: conic-gradient(var(--primary) calc(var(--percentage) * 1%), var(--secondary) 0);
+  mask: radial-gradient(white 55%, transparent 0);
+  mask-mode: alpha;
+  -webkit-mask: radial-gradient(#0000 55%, #000 0);
+  -webkit-mask-mode: alpha;
+}
+
+[role="progressbar"]::after {
+  counter-reset: percentage var(--value);
+  content: counter(percentage) '%';
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: calc(var(--size) / 5);
+  color: var(--primary);
+}
+

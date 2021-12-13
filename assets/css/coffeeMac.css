@@ -3,7 +3,9 @@
   height: 280px;
   position: relative;
   left: calc(50% - 150px);
-  margin-top: 2em;
+  margin-top: 3em;
+  transform: translateY(-230px);
+
 }
 .coffee-header {
   width: 100%;
@@ -263,13 +265,36 @@
 
 
 .mac{
-  width: 50px;height: 50px;
+  width: 40px;height: 40px;
   float: none;
   position: relative;
-  margin: 2em;
-  left: calc(50% - 130px);
+  left: calc(120%);
+  transform: translateY(-230px);
 }
 
 .drinkshow{
   display: none;
+}
+
+
+@media only screen and (max-width:600px) {
+  .mac{
+  left: calc(66%);
+  transform: translateY(-230px);
+}
+.container{
+  left: calc(55%);
+  width: 40%;
+  height: 30%;
+}
+.about-me__img{
+  width: 30%;height: 30%;
+}
+.intro__img{
+  width: 40%;height:40%;
+}
+.about-me{
+  margin-left: 1em;margin-right: 1em;
+}
+}
 }

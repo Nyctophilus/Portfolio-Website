@@ -29,7 +29,9 @@
     content: "\f06b"
 }
 
-
+.fa-hand-o-right:before {
+    content: "\f0a4"
+}
 
 .fa-twitter-square:before {
     content: "\f081"
