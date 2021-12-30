@@ -2,7 +2,7 @@
 
 
  <p align="justify">This website serves as an online portfolio to showcase my web presence, résumé, story, & featured projects with a Particle.js aligned theme.</p>
-
+![My portfolio intro](https://github.com/Nyctophilus/Portfolio-Website/blob/main/assets/img/jpg/Personal-Resume-Website.jpg)
 
 
 
